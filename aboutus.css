@@ -1,0 +1,149 @@
+body {
+    font-family: 'Lily Script One';
+    margin: 0;
+    background-image: url('./images/BG.png');
+    background-size: 100%;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 30%;
+    margin-bottom: 25px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 8px;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 25px;
+    position: static;
+    transition: all 1s;
+  }
+
+  .card:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  #cimg:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .about-section {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .about-section p {color: white; font-size: 1.5vw;}
+  .card p {font-size: 1vw; color: white}
+
+  .container {
+    padding: 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: white;
+  }
+
+  h1{font-size: 3vw;}
+  h2{font-size: 3vw;color: white}
+   
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  #cimg {    
+    border-radius: 25px;
+    transition: all 1s;
+  }
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    width: 100%;
+    color: black;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Lily Script One';
+}
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: black;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: white;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+    border-radius: 25px;
+    text-transform: lowercase;
+}
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width:100%;
+    color: black;
+    display: block;
+    padding: 0 100px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: white;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    border-radius: 25px;
+}
+
+#flip{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

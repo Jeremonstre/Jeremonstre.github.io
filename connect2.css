@@ -1,0 +1,245 @@
+body {
+  font-family: 'Lily Script One';
+  background-image: url('./images/BG.png');
+  background-size: 100%;
+}
+
+#demog{
+  color:green;
+}
+
+#demob{
+  color: darkred;
+}
+
+#H{
+  background-color: black;
+  margin: 0;
+  color: white;
+  border-bottom: 10px solid black;
+}
+b{
+  color:black;
+}
+
+#remember{
+  color:black
+}
+
+input{
+  color: black;
+}
+
+#H1{
+  color: black;
+  font-size: 30px;
+  margin-top: 2%;
+}
+
+#H2{
+  color: black;
+  font-size: 30px;
+  padding: 15px;
+}
+
+input[type="checkbox"]{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  color:black;
+
+}
+#lgo{
+  border-radius: 25px;
+  margin-top: 30px;
+  width: 65%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+/* Set a style for all buttons */
+.btn:not(#pay){
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 40%;
+  font-size: 17px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: darkred;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  margin-top: 0;
+  position: relative;
+}
+
+#container1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  
+}
+
+#plh ,#Luname, #Lpsw, #email, #birthday, #uname{
+    font-family: 'Lily Script One';
+}
+
+#sub, #connect{
+  margin-left:25%;
+  margin-right: 25%;
+  width: 50%;
+  font-family: 'Lily Script One';
+}
+.psw{
+  float: right;
+  margin-top: 5%;
+  text-decoration: underline;
+}
+
+.cdt{
+  text-decoration: underline;
+}
+
+a.psw:visited {
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+}
+
+a.psw {
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+}
+
+a.cdt:visited {
+    color: black;
+    text-decoration: underline;
+  }
+
+  a.cdt{
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+
+.cont {
+    padding: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  align-self: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border: 5px solid black;
+  width: 35%;
+  border-radius: 25px;
+  display : inline-block;
+  margin-left: 10%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: darkred;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 1s;
+  animation: animatezoom 1s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+#actimg{
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+#actimg:active {
+  background-color: black;
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
+}
+
+#actimg:hover {
+  background-color: black;
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
+}
